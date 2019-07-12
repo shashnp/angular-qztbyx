@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { StrategyDrawerComponent } from './strategy-drawer/strategy-drawer.component';
+import { HoverDirective } from './hover.directive';
 
 
 const routes: Routes = [
@@ -16,7 +17,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
-  declarations: [AppComponent, HelloComponent, StrategyDrawerComponent],
+  declarations: [AppComponent, HelloComponent, StrategyDrawerComponent, HoverDirective],
   bootstrap: [AppComponent],
   exports: [RouterModule],
 })
