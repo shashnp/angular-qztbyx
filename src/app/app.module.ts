@@ -5,17 +5,18 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { StrategyDrawerComponent } from './strategy-drawer/strategy-drawer.component';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'hello' },
-  { path: 'strategy', loadChildren: 'app/strategy-drawer/strategy.module#StrategyModule' },
+  { path: 'hello', component: HelloComponent },
+  { path: 'strategy', component: StrategyDrawerComponent},
 ];
 
 
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent, HelloComponent, StrategyDrawerComponent],
   bootstrap: [AppComponent],
   exports: [RouterModule],
 })
