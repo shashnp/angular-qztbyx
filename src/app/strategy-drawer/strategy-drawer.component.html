@@ -1,0 +1,25 @@
+<p>
+strategy-drawer works!
+</p>
+
+<div (mouseenter)="hoverStateIn(0)"
+      (mouseleave)="hoverStateOut(0)">
+      Test 2
+      <div (click)="onClick(0)">Click</div>
+
+       <div class="thumbs"
+           *ngIf="song[0].click">
+        Stay on click.
+      </div>
+</div>
+
+<div (mouseenter)="hoverStateIn(1)"
+      (mouseleave)="hoverStateOut(1)">
+      Test 5
+      <div (click)="onClick(1)">Click 5</div>
+
+       <div class="thumbs"
+           *ngIf="song[1].click">
+        Stay on click 5.
+      </div>
+</div>
